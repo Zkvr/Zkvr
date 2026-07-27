@@ -1,112 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" role="img" aria-labelledby="title desc">
-  <title id="title">Zkvr terminal profile</title>
-  <desc id="desc">A compact terminal-style profile card with an ASCII ZKVR monogram and technical system information.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="420" viewBox="0 0 1040 420" role="img" aria-labelledby="title desc">
+  <title id="title">Zkvr fastfetch</title>
+  <desc id="desc">A plain terminal-style profile with an ASCII ZKVR logo and current setup.</desc>
 
-  <defs>
-    <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b0f14"/>
-      <stop offset="0.58" stop-color="#0d1319"/>
-      <stop offset="1" stop-color="#11171d"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#47e6c1"/>
-      <stop offset="0.55" stop-color="#55b8ff"/>
-      <stop offset="1" stop-color="#ff9a62"/>
-    </linearGradient>
-    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#89a4b8" stroke-opacity=".055" stroke-width="1"/>
-    </pattern>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <clipPath id="window">
-      <rect x="12" y="12" width="1076" height="496" rx="20"/>
-    </clipPath>
-  </defs>
-
-  <rect width="1100" height="520" rx="24" fill="#070a0e"/>
-  <rect x="12" y="12" width="1076" height="496" rx="20" fill="url(#shell)" stroke="#31414e" stroke-width="2"/>
-  <g clip-path="url(#window)">
-    <rect x="12" y="12" width="1076" height="496" fill="url(#grid)"/>
-    <path d="M12 72H1088" stroke="#31414e" stroke-width="2"/>
-    <path d="M575 96V448" stroke="#31414e" stroke-width="1"/>
-    <rect x="12" y="12" width="1076" height="60" fill="#0a0e13" fill-opacity=".92"/>
-  </g>
-
-  <circle cx="45" cy="42" r="7" fill="#ff6b6b"/>
-  <circle cx="69" cy="42" r="7" fill="#ffd166"/>
-  <circle cx="93" cy="42" r="7" fill="#47e6c1"/>
-
-  <text x="132" y="48" fill="#8ea3b2" font-family="'Cascadia Mono','Consolas','Courier New',monospace" font-size="16">zkvr@workbench: ~/profile</text>
-  <text x="1028" y="48" fill="#47e6c1" font-family="'Cascadia Mono','Consolas','Courier New',monospace" font-size="14" text-anchor="end">● ONLINE</text>
+  <rect width="1040" height="420" rx="10" fill="#0d1117"/>
+  <rect x="1" y="1" width="1038" height="418" rx="9" fill="none" stroke="#30363d" stroke-width="2"/>
 
   <g font-family="'Cascadia Mono','Consolas','Courier New',monospace">
-    <text x="48" y="120" fill="#667986" font-size="15">$ whoami --verbose</text>
+    <text x="34" y="42" fill="#8b949e" font-size="15">$ fastfetch --logo zkvr</text>
 
-    <g fill="url(#accent)" font-size="19" font-weight="700" filter="url(#glow)">
-      <text x="48" y="166">███████╗██╗  ██╗██╗   ██╗██████╗</text>
-      <text x="48" y="193">╚══███╔╝██║ ██╔╝██║   ██║██╔══██╗</text>
-      <text x="48" y="220">  ███╔╝ █████╔╝ ██║   ██║██████╔╝</text>
-      <text x="48" y="247"> ███╔╝  ██╔═██╗ ╚██╗ ██╔╝██╔══██╗</text>
-      <text x="48" y="274">███████╗██║  ██╗ ╚████╔╝ ██║  ██║</text>
-      <text x="48" y="301">╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝</text>
+    <g fill="#58a6ff" font-size="18" font-weight="700">
+      <text x="34" y="92">███████╗██╗  ██╗██╗   ██╗██████╗</text>
+      <text x="34" y="119">╚══███╔╝██║ ██╔╝██║   ██║██╔══██╗</text>
+      <text x="34" y="146">  ███╔╝ █████╔╝ ██║   ██║██████╔╝</text>
+      <text x="34" y="173"> ███╔╝  ██╔═██╗ ╚██╗ ██╔╝██╔══██╗</text>
+      <text x="34" y="200">███████╗██║  ██╗ ╚████╔╝ ██║  ██║</text>
+      <text x="34" y="227">╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝</text>
     </g>
 
-    <text x="48" y="348" fill="#e5edf3" font-size="17">builder of useful systems</text>
-    <text x="48" y="378" fill="#8095a4" font-size="15">less magic · more repeatability</text>
+    <text x="34" y="279" fill="#c9d1d9" font-size="16">3D printing / configs / small automations</text>
+    <text x="34" y="313" fill="#8b949e" font-size="15">current: making a K1 easier to recover</text>
+    <text x="34" y="347" fill="#8b949e" font-size="15">and less annoying to tune.</text>
 
-    <rect x="48" y="410" width="475" height="42" rx="8" fill="#121b22" stroke="#283b47"/>
-    <text x="65" y="437" fill="#47e6c1" font-size="15">zkvr@workbench</text>
-    <text x="190" y="437" fill="#7890a0" font-size="15">:</text>
-    <text x="202" y="437" fill="#55b8ff" font-size="15">~</text>
-    <text x="216" y="437" fill="#e5edf3" font-size="15">$ build --test --recover</text>
-    <rect x="496" y="423" width="8" height="18" fill="#ff9a62">
-      <animate attributeName="opacity" values="1;1;0;0;1" dur="1.25s" repeatCount="indefinite"/>
-    </rect>
-
-    <text x="618" y="120" fill="#47e6c1" font-size="22" font-weight="700">zkvr@github</text>
-    <text x="618" y="148" fill="#526775" font-size="15">──────────────────────────────────</text>
+    <text x="555" y="82" fill="#7ee787" font-size="20" font-weight="700">zkvr@github</text>
+    <text x="555" y="108" fill="#484f58" font-size="15">────────────</text>
 
     <g font-size="16">
-      <text x="618" y="184" fill="#ff9a62">focus</text>
-      <text x="730" y="184" fill="#526775">:</text>
-      <text x="752" y="184" fill="#e5edf3">3D printing · automation</text>
+      <text x="555" y="144" fill="#7ee787">PC</text>
+      <text x="675" y="144" fill="#8b949e">Windows</text>
 
-      <text x="618" y="218" fill="#ff9a62">systems</text>
-      <text x="730" y="218" fill="#526775">:</text>
-      <text x="752" y="218" fill="#e5edf3">K1 · Docker · self-hosted</text>
+      <text x="555" y="176" fill="#7ee787">Printer</text>
+      <text x="675" y="176" fill="#8b949e">Creality K1</text>
 
-      <text x="618" y="252" fill="#ff9a62">tools</text>
-      <text x="730" y="252" fill="#526775">:</text>
-      <text x="752" y="252" fill="#e5edf3">Git · Python · PowerShell</text>
+      <text x="555" y="208" fill="#7ee787">Firmware</text>
+      <text x="675" y="208" fill="#8b949e">Klipper + Moonraker</text>
 
-      <text x="618" y="286" fill="#ff9a62">firmware</text>
-      <text x="730" y="286" fill="#526775">:</text>
-      <text x="752" y="286" fill="#e5edf3">Klipper · Moonraker</text>
+      <text x="555" y="240" fill="#7ee787">Interface</text>
+      <text x="675" y="240" fill="#8b949e">Fluidd + Guppy Screen</text>
 
-      <text x="618" y="320" fill="#ff9a62">slicer</text>
-      <text x="730" y="320" fill="#526775">:</text>
-      <text x="752" y="320" fill="#e5edf3">OrcaSlicer</text>
+      <text x="555" y="272" fill="#7ee787">Slicer</text>
+      <text x="675" y="272" fill="#8b949e">OrcaSlicer</text>
 
-      <text x="618" y="354" fill="#ff9a62">mobile</text>
-      <text x="730" y="354" fill="#526775">:</text>
-      <text x="752" y="354" fill="#e5edf3">iOS · Mobileraker</text>
+      <text x="555" y="304" fill="#7ee787">Services</text>
+      <text x="675" y="304" fill="#8b949e">Docker + Spoolman</text>
 
-      <text x="618" y="388" fill="#ff9a62">method</text>
-      <text x="730" y="388" fill="#526775">:</text>
-      <text x="752" y="388" fill="#e5edf3">change one thing</text>
+      <text x="555" y="336" fill="#7ee787">Mobile</text>
+      <text x="675" y="336" fill="#8b949e">Mobileraker / iOS</text>
     </g>
 
-    <text x="618" y="438" fill="#667986" font-size="14">uptime</text>
-    <rect x="686" y="426" width="306" height="14" rx="7" fill="#17222a"/>
-    <rect x="686" y="426" width="306" height="14" rx="7" fill="url(#accent)" opacity=".9"/>
-    <text x="1016" y="438" fill="#47e6c1" font-size="14">stable</text>
+    <text x="34" y="390" fill="#8b949e" font-size="15">zkvr@workbench:~$</text>
+    <rect x="202" y="376" width="8" height="18" fill="#c9d1d9"/>
   </g>
-
-  <path d="M48 480H1052" stroke="url(#accent)" stroke-width="2" opacity=".85"/>
-  <text x="48" y="498" fill="#526775" font-family="'Cascadia Mono','Consolas','Courier New',monospace" font-size="12">STATUS: configs versioned · recovery tested · curiosity active</text>
 </svg>
